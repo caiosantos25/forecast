@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 def main():
-    import matplotlib
-    matplotlib.use("agg")
     import matplotlib.pyplot as plt
     import streamlit as st
     import pandas as pd
