@@ -1,16 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 def main():
-    import matplotlib.pyplot as plt
     import streamlit as st
     import pandas as pd
     from json import loads
     import time
     import numpy as np
     import pandas as pd
-    # import matplotlib.pyplot as plt
-    # import scipy
-    # import warnings
+    import matplotlib.pyplot as plt
+    import warnings
     st.title("Olá Cadastrer")
     st.write("texto 1")
     
