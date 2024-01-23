@@ -23,16 +23,7 @@ def main():
     import time
     import numpy as np
     import pandas as pd
-    from statsmodels.tsa.statespace.sarimax import SARIMAX
     import matplotlib.pyplot as plt
-    import matplotlib as m
-    import seaborn as sns
-    import statsmodels.api as sm
-    import pmdarima as pm
-    from pmdarima.model_selection import train_test_split
-    from statsmodels.tsa.seasonal import seasonal_decompose
-    from pandas.plotting import autocorrelation_plot
-    from matplotlib import pyplot
     import scipy
     import warnings
     st.title("Olá Cadastrer")
