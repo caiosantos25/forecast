@@ -1,25 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
-# !pip install streamlit
-
-
-# In[8]:
-
-
-
-
-
-# In[16]:
-
-
 def main():
-    import matplotlib
-    # matplotlib.use("Agg")  # Use Agg backend to avoid Tkinter-related conflicts
-
     import streamlit as st
     import pandas as pd
     from json import loads
