@@ -18,7 +18,7 @@
 
 def main():
     import matplotlib
-matplotlib.use("Agg")  # Use Agg backend to avoid Tkinter-related conflicts
+    matplotlib.use("Agg")  # Use Agg backend to avoid Tkinter-related conflicts
 
     import streamlit as st
     import pandas as pd
