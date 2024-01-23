@@ -7,8 +7,7 @@ def main():
     import time
     import numpy as np
     import pandas as pd
-    # import matplotlib.pyplot as plt
-    import spacy
+    import matplotlib as plt
     import warnings
     st.title("Olá Cadastrer")
     st.write("texto 1")
