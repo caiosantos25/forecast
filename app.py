@@ -9,7 +9,7 @@ def main():
     import numpy as np
     import pandas as pd
     # import matplotlib.pyplot as plt
-    import scipy
+    # import scipy
     import warnings
     st.title("Olá Cadastrer")
     st.write("texto 1")
