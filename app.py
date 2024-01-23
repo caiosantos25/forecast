@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+!pip install agg
 def main():
-    !pip install agg
     import matplotlib
     matplotlib.use("agg")
     import matplotlib.pyplot as plt
