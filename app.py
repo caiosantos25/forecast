@@ -2,6 +2,10 @@
 # coding: utf-8
 
 def main():
+    !pip install agg
+    import matplotlib
+    matplotlib.use("agg")
+    import matplotlib.pyplot as plt
     import streamlit as st
     import pandas as pd
     from json import loads
@@ -25,7 +29,6 @@ def main():
         dados = dados.sort_values(by='Month')
         dados = dados.drop(['Sessions'], axis = 1)
         st.dataframe(dados)
-        import matplotlib.pyplot as plt
         # Criar o gráfico de linha
         fig, ax = plt.subplots()
         
