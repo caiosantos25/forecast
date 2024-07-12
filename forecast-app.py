@@ -1,4 +1,6 @@
 # In[16]:
+
+
 def main():
     import streamlit as st
     import pandas as pd
@@ -8,6 +10,7 @@ def main():
     import matplotlib.pyplot as plt
     import matplotlib as m
     import seaborn as sns
+    import pmdarima as pm
     from matplotlib import pyplot
     import streamlit as st
     from pathlib import Path
@@ -170,12 +173,12 @@ def main():
                                                         max_value=int(df['Keyword Difficulty'].max()),
                                                         value=(int(df['Keyword Difficulty'].min()), int(df['Keyword Difficulty'].max())))
         
-         # Sidebar filters for Clicks
-        st.sidebar.header('Filtro de Clicks')
-        Clicks_range = st.sidebar.slider('Selecione o Intervalo de Clicks',
-                                                        min_value=int(df['Clicks'].min()),
-                                                        max_value=int(df['Clicks'].max()),
-                                                        value=(int(df['Clicks'].min()), int(df['Clicks'].max())))
+         # Sidebar filters for Traffic Cost
+        st.sidebar.header('Filtro de Traffic Cost')
+        Traffic_Cost_range = st.sidebar.slider('Selecione o Intervalo de Traffic Cost',
+                                                        min_value=int(df['Traffic Cost'].min()),
+                                                        max_value=int(df['Traffic Cost'].max()),
+                                                        value=(int(df['Traffic Cost'].min()), int(df['Traffic Cost'].max())))
         # Sidebar filters for Traffic
         st.sidebar.header('Filtro de Traffic')
         impressoes_range = st.sidebar.slider('Selecione o Intervalo de Traffic',
@@ -201,7 +204,7 @@ def main():
         def apply_filters():
             df_filtrado = filter_by_range(df, 'Position', Position_range)
             df_filtrado = filter_by_range(df_filtrado, 'Search Volume', search_volume_range)
-            df_filtrado = filter_by_range(df_filtrado, 'Clicks', Clicks_range)
+            df_filtrado = filter_by_range(df_filtrado, 'Traffic Cost', Traffic_Cost_range)
             df_filtrado = filter_by_range(df_filtrado, 'Traffic', impressoes_range)
             df_filtrado = filter_by_range(df_filtrado, 'Keyword Difficulty', keyword_difficulty_range)
             # Aplicando filtro apenas se opções forem selecionadas
