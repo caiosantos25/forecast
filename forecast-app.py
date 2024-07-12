@@ -10,7 +10,6 @@ def main():
     import matplotlib.pyplot as plt
     import matplotlib as m
     import seaborn as sns
-    import pmdarima as pm
     from matplotlib import pyplot
     import streamlit as st
     from pathlib import Path
@@ -19,7 +18,6 @@ def main():
     import json
     import requests
     from flask import Flask, render_template, request
-    import scipy
     import warnings
     st.title("Olá Cadastrer")
     
