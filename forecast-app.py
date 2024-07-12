@@ -1,8 +1,7 @@
 # In[16]:
-
+!pip install seaborn
 
 def main():
-    !pip install seaborn
     import streamlit as st
     import pandas as pd
     from json import loads
