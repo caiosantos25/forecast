@@ -10,7 +10,6 @@ def main():
     import matplotlib.pyplot as plt
     import matplotlib as m
     import seaborn as sns
-    import pmdarima as pm
     from matplotlib import pyplot
     import streamlit as st
     from pathlib import Path
