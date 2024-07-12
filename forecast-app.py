@@ -186,7 +186,7 @@ def main():
     
         keyword_intents_options = df["Keyword Intents"].unique()
 
-        valores_categoria = df['Categoria'].unique()
+        valores_categoria = df['SERP Features by Keyword'].unique()
 
         def filter_by_range(df, column_name, selected_range):
                 return df[(df[column_name] >= selected_range[0]) & (df[column_name] <= selected_range[1])]
