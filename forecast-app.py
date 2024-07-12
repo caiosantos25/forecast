@@ -1,6 +1,4 @@
 # In[16]:
-!pip install seaborn
-
 def main():
     import streamlit as st
     import pandas as pd
