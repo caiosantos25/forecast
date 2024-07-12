@@ -2,6 +2,7 @@
 
 
 def main():
+    !pip install seaborn
     import streamlit as st
     import pandas as pd
     from json import loads
